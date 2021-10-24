@@ -1,0 +1,15 @@
+version: '3'
+services:
+    tomcat:
+        container_name: tomcat-api
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+           - "3006:8080"
+        volumes:
+           - qcloud-backend:/home/
+volumes:
+  qcloud-backend:
+    external: true
+
