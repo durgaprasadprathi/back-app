@@ -7,9 +7,5 @@ services:
             dockerfile: Dockerfile
         ports:
            - "3006:8080"
-        volumes:
-           - qcloud-backend:/home/
-volumes:
-  qcloud-backend:
-    external: true
+        
 
